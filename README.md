@@ -31,8 +31,8 @@ Faça o download da <a href="apk/app-debug.apk?raw=true">APK diretamente</a>. Vo
 
 ## Tecnologias usadas e bibliotecas de código aberto
 
-- Minimum SDK level COLOQUE AQUI A APK MINIMA
-- [Linguagem Kotlin](https://kotlinlang.org/) OU JAVA SE USAR JAVA
+- Minimum SDK level : 23
+- [Linguagem Kotlin](https://kotlinlang.org/)
 
 - Jetpack - LISTE O MÁXIMO DE COMPONENTES DO JETPACK QUE VOCÊ USA
   - Lifecycle: Observe os ciclos de vida do Android e manipule os estados da interface do usuário após as alterações do ciclo de vida.
@@ -61,26 +61,32 @@ APRESENTE A ARQUITETURA UTILIZADA NO PROJETO
 ADICIONE UM FLUXOGRAMA DA ARQUITETURA UTILIZADA - https://excalidraw.com/
 <br>
 
-## API de terceiros
-
-COLOQUE O NOME, LINK E DESCRIÇÃO DAS APIS UTILIZADAS NO PROJETO
-
 ## Features
 
-### Feature 1
-<img src="screenshots/feature-1.gif" width="25%"/>
+### Listagem de produtos
+<img src="screenshoots/feature-1.gif" width="25%"/>
 
-Texto de exemplo
+Listagem de produtos utilizando o recycler view, Layout de card criado usando Cardview e Constraint Layout.
 
-### Feature 2
-<img src="screenshots/feature-2.gif" width="25%"/>
+### Conclusão da compra
+<img src="screenshoots/feature-2.gif" width="25%"/>
 
-Texto de Exemplo.
+Conclusão de compra utilizando botões interativos e múltiplas telas seguindo o ciclo de vida de uma Activity.
 
 # Licença
 
-COLOQUE A LICENÇA - https://opensource.org/licenses
-
 ```xml
+   Copyright [2023] [Emerson Dos Santos]
 
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
 ```
