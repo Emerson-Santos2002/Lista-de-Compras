@@ -64,12 +64,12 @@ ADICIONE UM FLUXOGRAMA DA ARQUITETURA UTILIZADA - https://excalidraw.com/
 ## Features
 
 ### Listagem de produtos
-<img src="screenshoots/feature-1.gif" width="25%"/>
+<img src="screenshoots/device-1.webm" width="25%"/>
 
 Listagem de produtos utilizando o recycler view, Layout de card criado usando Cardview e Constraint Layout.
 
 ### Conclusão da compra
-<img src="screenshoots/feature-2.gif" width="25%"/>
+<img src="screenshoots/device-2.webm" width="25%"/>
 
 Conclusão de compra utilizando botões interativos e múltiplas telas seguindo o ciclo de vida de uma Activity.
 
