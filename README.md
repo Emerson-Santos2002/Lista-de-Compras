@@ -34,42 +34,34 @@ Faça o download da <a href="apk/app-debug.apk?raw=true">APK diretamente</a>. Vo
 - Minimum SDK level : 23
 - [Linguagem Kotlin](https://kotlinlang.org/)
 
-- Jetpack - LISTE O MÁXIMO DE COMPONENTES DO JETPACK QUE VOCÊ USA
+- Jetpack 
   - Lifecycle: Observe os ciclos de vida do Android e manipule os estados da interface do usuário após as alterações do ciclo de vida.
   - ViewModel: Gerencia o detentor de dados relacionados à interface do usuário e o ciclo de vida. Permite que os dados sobrevivam a alterações de configuração, como rotações de tela.
-  - ViewBinding: Liga os componentes do XML no Kotlin através de uma classe que garante segurança de tipo e outras vantagens.
-  - Room: Biblioteca de abstração do banco de dados SQLite que garante segurança em tempo de compilação e facilidade de uso.
   - Custom Views: View customizadas feitas do zero usando XML.
-  - [...]
+  - Recycler View: Torna eficiente a exibição de grandes conjuntos de dados, criando os elementos de forma dinâmica.
+  - Intent : Descrição abstrata  de uma operação a ser executada. Neste projeto foi utilizado para aberturas de novas activities e passagem de dados.
 
-- Arquitetura - LISTE BREVEMENTE OS COMPONENTES DA SUA ARQUITETURA UTILIZADA
+- Arquitetura
   - MVVM (View - ViewModel - Model)
   - Comunicação da ViewModel com a View através de LiveData
   - Comunicação da ViewModel com a Model através de Kotlin Flow
-  - Repositories para abstração da comunidação com a camada de dados.
-  
-- Bibliotecas - LISTE TODAS AS BIBLIOTECAS USADAS NO PROJETO, COM LINK E DESCRIÇÃO BREVE DO QUE ELA FAZ
-  - [Retrofit2 & OkHttp3](https://github.com/square/retrofit): Para realizar requisições seguindo o padrão HTTP.
-  - [Glide](https://github.com/bumptech/glide): Para carregamento de imagens e cacheamento das mesmas.
-  - [Timber](https://github.com/JakeWharton/timber): Para registros de logs mais amigáveis que facilitam o debug.
-  - [...]
 
 ## Arquitetura
-APRESENTE A ARQUITETURA UTILIZADA NO PROJETO
-**Nome do aplicativo** utiliza a arquitetura MVVM e o padrão de Repositories, que segue as [recomendações oficiais do Google](https://developer.android.com/topic/architecture).
+
+**Shopping List** utiliza a arquitetura MVVM que segue as [recomendações oficiais do Google](https://developer.android.com/topic/architecture).
 </br></br>
-ADICIONE UM FLUXOGRAMA DA ARQUITETURA UTILIZADA - https://excalidraw.com/
+<img src="screenshoots/arquitetura.png" width="60%"/>
 <br>
 
 ## Features
 
 ### Listagem de produtos
-<img src="screenshoots/device-1.webm" width="25%"/>
+<img src="screenshoots/device-1.gif" width="25%"/>
 
 Listagem de produtos utilizando o recycler view, Layout de card criado usando Cardview e Constraint Layout.
 
 ### Conclusão da compra
-<img src="screenshoots/device-2.webm" width="25%"/>
+<img src="screenshoots/device-2.gif" width="25%"/>
 
 Conclusão de compra utilizando botões interativos e múltiplas telas seguindo o ciclo de vida de uma Activity.
 
