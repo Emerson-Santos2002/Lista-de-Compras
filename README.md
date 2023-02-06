@@ -37,7 +37,6 @@ Faça o download da <a href="apk/app-debug.apk?raw=true">APK diretamente</a>. Vo
 - Jetpack 
   - Lifecycle: Observe os ciclos de vida do Android e manipule os estados da interface do usuário após as alterações do ciclo de vida.
   - ViewModel: Gerencia o detentor de dados relacionados à interface do usuário e o ciclo de vida. Permite que os dados sobrevivam a alterações de configuração, como rotações de tela.
-  - ViewBinding: Liga os componentes do XML no Kotlin através de uma classe que garante segurança de tipo e outras vantagens.
   - Custom Views: View customizadas feitas do zero usando XML.
   - Recycler View: Torna eficiente a exibição de grandes conjuntos de dados, criando os elementos de forma dinâmica.
   - Intent : Descrição abstrata  de uma operação a ser executada. Neste projeto foi utilizado para aberturas de novas activities e passagem de dados.
