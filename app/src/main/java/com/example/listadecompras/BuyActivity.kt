@@ -22,9 +22,8 @@ class BuyActivity : AppCompatActivity() {
         super.onResume()
 
         buttonReturn.setOnClickListener {
-            startActivity(
-                Intent(this, MainActivity::class.java)
-            )
+
+            finish()
         }
     }
 }
