@@ -14,12 +14,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        initRecyclerView()
-        addDataSource()
-
     }
 
+    override fun onStart() {
+        super.onStart()
+        initRecyclerView()
+        addDataSource()
+    }
     private fun addDataSource() {
 
         val dataSource = DataSource.createDataSet()
