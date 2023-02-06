@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lista de Compras</string>
+    <string name="app_name">Shopping List</string>
     <string name="textview">TextView</string>
     <string name="concluido">Concluído</string>
     <string name="compra_concluida">Compra do produto %1$s no valor de %2$s realizada com sucesso.</string>
