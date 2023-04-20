@@ -9,11 +9,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ListaDeCompras">
         <activity
-            android:name=".BuyActivity"
+            android:name=".activity.BuyActivity"
             android:exported="false"
             android:theme="@style/Theme.CompraConcluida"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.ListaDeCompras">
             <intent-filter>

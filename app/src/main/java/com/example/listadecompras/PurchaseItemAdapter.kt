@@ -3,15 +3,19 @@ package com.example.listadecompras
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.listadecompras.models.PurchaseItem
-import kotlinx.android.synthetic.main.res_item_list.view.*
+import kotlinx.android.synthetic.main.res_item_list.view.buttonBuy
+import kotlinx.android.synthetic.main.res_item_list.view.itemImage
+import kotlinx.android.synthetic.main.res_item_list.view.itemPrice
+import kotlinx.android.synthetic.main.res_item_list.view.itemTitle
 
 class PurchaseItemAdapter(
     private val onItemClicked: (PurchaseItem) -> Unit
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
-    private var items : List<PurchaseItem> = ArrayList()
+    private var itemsList : List<PurchaseItem> = emptyList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return PurchaseItemViewHolder(
@@ -22,17 +26,18 @@ class PurchaseItemAdapter(
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         when(holder){
             is PurchaseItemViewHolder ->{
-                holder.bind(items[position], onItemClicked)
+                holder.bind(itemsList[position], onItemClicked)
             }
         }
     }
 
-    override fun getItemCount(): Int {
-        return items.size
-    }
+    override fun getItemCount(): Int = itemsList.size
 
     fun setList(purchaseItemList: List<PurchaseItem>){
-        this.items = purchaseItemList
+        val diffCallback = PurchaseItemDiffCallback(itemsList, purchaseItemList)
+        val result = DiffUtil.calculateDiff(diffCallback)
+        this.itemsList = purchaseItemList
+        result.dispatchUpdatesTo(this)
     }
 
     class PurchaseItemViewHolder constructor(
@@ -53,8 +58,5 @@ class PurchaseItemAdapter(
                 onItemClicked(list)
             }
         }
-
-
     }
-
 }

@@ -1,7 +1,8 @@
-package com.example.listadecompras
+package com.example.listadecompras.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.listadecompras.R
 import com.example.listadecompras.models.PurchaseItem
 import kotlinx.android.synthetic.main.activity_buy.*
 

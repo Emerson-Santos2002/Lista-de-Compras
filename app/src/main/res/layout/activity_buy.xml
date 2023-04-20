@@ -7,7 +7,7 @@
     android:paddingStart="8dp"
     android:paddingEnd="8dp"
     android:background="@color/green"
-    tools:context=".BuyActivity">
+    tools:context=".activity.BuyActivity">
 
     <ImageView
         android:id="@+id/imageView"

@@ -1,9 +1,12 @@
-package com.example.listadecompras
+package com.example.listadecompras.activity
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.listadecompras.DataSource
+import com.example.listadecompras.PurchaseItemAdapter
+import com.example.listadecompras.R
 import com.example.listadecompras.models.PurchaseItem
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -33,12 +36,10 @@ class MainActivity : AppCompatActivity() {
         this.purchaseItemAdapter = PurchaseItemAdapter { list ->
             openBuy(list)
         }
-
         recyclerview.apply{
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = purchaseItemAdapter
         }
-
     }
 
     private fun openBuy(list: PurchaseItem) {
@@ -48,6 +49,5 @@ class MainActivity : AppCompatActivity() {
                 putExtra("lista", list)
             }
         )
-
     }
 }
